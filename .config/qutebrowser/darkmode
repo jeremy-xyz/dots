@@ -1,0 +1,1 @@
+set qt.args '["blink-settings=darkMode=4,darkModeBackgroundBrightnessThreshold=125,darkModeTextBrightnessThreshold=125"]'

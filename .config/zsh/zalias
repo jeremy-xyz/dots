@@ -1,0 +1,55 @@
+# Basic
+alias ls='exa -l --color=always --group-directories-first'
+alias ll='exa -lFha --color=always --group-directories-first'
+alias la='exa -a --color=always --group-directories-first'
+alias lt='exa -lTL2 --color=always --group-directories-first'
+alias llt='exa -aT --color=always --group-directories-first'
+alias cp='cp -i'
+alias df='df -h'
+alias grep='grep --color=auto'
+alias xres='xrdb ~/.Xresources'
+alias gfn='fc-match -a | grep -i'
+alias pdel='shred -zvu -n 5'
+alias extar='tar xfv'
+alias sex='startx'
+alias neofetch='echo "" && neofetch'
+alias v='nvim'
+
+# Pacman and Aur yay
+alias up='sudo pacman -Syu'
+alias pac='pacman -Ss'
+alias pacr='sudo pacman -Rs'
+alias pacre='sudo pacman -Rns'
+alias paci='sudo pacman -S'
+alias pacqi='pacman -Qi'
+alias pacc='sudo pacman -Sc'
+alias pacqtd='sudo pacman -Rns $(pacman -Qtdq)'
+alias aur='yay -S'
+alias auru='yay -Syu'
+alias aurs='yay -Ss'
+
+# Git
+alias gk='git checkout'
+alias gc='git commit'
+alias gb='git branch'
+alias gs='git status'
+alias fullclean='git checkout master && make clean && rm -f config.h && git reset --hard origin/master'
+alias hclean='make clean && rm -f config.h && git reset --hard origin/master'
+alias iclean='make && sudo make clean install'
+
+# Git bare
+alias da='dot add'
+alias dcom='dot commit -m'
+alias dcoma='dot commit -am'
+alias dpush='dot push'
+alias dpull='dot pull'
+alias dstats='dot status'
+alias dremove='dot rm --cached'
+alias dfetch='dot fetch'
+alias dfm='dot push origin master -f'
+alias dls='dot ls-tree -r HEAD --name-only'
+alias dot='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+
+# Misc
+alias weather='curl wttr.in/14.366920926932606,121.06283426284791'
+
