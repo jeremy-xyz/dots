@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+# Simple script to open copied link from xclip to mpv.
+mpv --fs "$(xclip -o)"

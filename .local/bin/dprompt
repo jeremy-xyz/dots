@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+# Dmenu prompt label with $1 to perform command $2
+
+[ "$(printf "No\\nYes" | dmenu -fn Monospace-11 -i -p "$1" -nb darkred -sb red -sf white -nf gray )" = "Yes" ] && $2

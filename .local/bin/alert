@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+# Audio alert for dunst.
+aplay ~/.local/share/audio/beep.wav
