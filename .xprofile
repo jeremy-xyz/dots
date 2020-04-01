@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+xset r rate 300 50 &
+xset s off -dpms &
+dwmbar &
+numlockx &
+picom -b &
+setbg &
+dunst &
+mpdupdate &
